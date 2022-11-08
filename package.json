@@ -1,0 +1,22 @@
+{
+  "name": "@ryanforever/upnp",
+  "version": "1.0.0",
+  "description": "use nat/upmp to open ports on your router",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "keywords": [
+    "nat",
+    "npmp",
+    "ports"
+  ],
+  "author": "ryan forever",
+  "license": "ISC",
+  "dependencies": {
+    "@ryanforever/logger": "^5.0.2",
+    "nat-pmp": "^1.0.0",
+    "nat-upnp": "^1.1.1"
+  },
+  "files": ["src"]
+}
