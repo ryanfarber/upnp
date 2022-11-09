@@ -1,5 +1,5 @@
 # upnp
-open port using nat/upnp
+open ports on your router/gateway using NAT/UPNP [(Universal Plug n Play)](https://en.wikipedia.org/wiki/Universal_Plug_and_Play)
 
 ```javascript
 const upnp = require("@ryanforever/upnp")
