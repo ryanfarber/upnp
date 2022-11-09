@@ -2,7 +2,7 @@
 open ports on your router/gateway using NAT/UPNP [(Universal Plug n Play)](https://en.wikipedia.org/wiki/Universal_Plug_and_Play)
 
 ```javascript
-const upnp = require("@ryanforever/upnp")
+const Upnp = require("@ryanforever/upnp")
 const upnp = new UPNP({
     gateway: "192.168.1.1", // i.e. router address
     port: 1337,
