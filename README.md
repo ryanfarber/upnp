@@ -14,3 +14,14 @@ upnp.map() // map the port
 upnp.unmap() // unmap the port
 upnp.getMappings() // returns all mappings on router/gateway
 ```
+
+choose different public and private ports
+```javascript
+const upnp = new UPNP({
+    gateway: "192.168.1.1",
+    public: 1337,
+    private: 1336,
+    ttl: 0,
+    description: "my application port"
+})
+```
