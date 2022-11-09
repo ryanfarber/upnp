@@ -3,7 +3,7 @@ const Logger = require("@ryanforever/logger")
 const nat = require("nat-upnp")
 
 function Upnp(config = {}) {
-	const logger = new Logger(__filename, {debug: config.debug})
+	const logger = new Logger("upnp", {debug: config.debug})
 	let port = config.port
 	let gateway = config.gateway
 	let public = config.public
@@ -41,7 +41,11 @@ function Upnp(config = {}) {
 		})
 	}
 
-	this.unmap = async function() {
+	this.unmap = async function(port) {
+		if (port) {
+			public = port
+			private = port
+		}
 		logger.debug("unmapping port...")
 		return new Promise((resolve, reject) => {
 			client.portUnmapping({public, private}, (err, data) => {
