@@ -1,4 +1,4 @@
-# map-port
+# upnp
 open port using nat/upnp
 
 ```javascript
