@@ -1,10 +1,10 @@
 {
   "name": "@ryanforever/upnp",
   "version": "1.0.0",
-  "description": "use nat/upmp to open ports on your router",
+  "description": "use nat/upnp (universal plug n play) to open ports on your router",
   "main": "index.js",
   "scripts": {
-    "test": "node ./test.js"
+    "test": "nodemon ./test.js"
   },
   "keywords": [
     "nat",
@@ -15,8 +15,9 @@
   "license": "ISC",
   "dependencies": {
     "@ryanforever/logger": "^5.0.2",
-    "nat-pmp": "^1.0.0",
     "nat-upnp": "^1.1.1"
   },
-  "files": ["src"]
+  "files": [
+    "src"
+  ]
 }
